@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="img/black_logo.svg" type="image/x-icon">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Хоккей</title>
 </head>
 <body class="body">
@@ -42,14 +46,14 @@
     <div class="wrapper__nav">
         <nav class="nav container__nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Цели</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">О мероприятии</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Бизнес-проекты</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">О турнире</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Наука</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Страны участники</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Партнеры</a></li>
+                <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#target" class="nav__link">Цели</a></li>
+                <li class="nav__item"><a href="#events" class="nav__link">О мероприятии</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Бизнес-проекты</a></li>
+                <li class="nav__item"><a href="#tourney" class="nav__link">О турнире</a></li>
+                <li class="nav__item"><a href="#medicine" class="nav__link">Наука</a></li>
+                <li class="nav__item"><a href="#countries" class="nav__link">Страны участники</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">Партнеры</a></li>
             </ul>
         </nav>
         <div class="header__links nav__links">
@@ -66,8 +70,8 @@
         </div>
     </div>
     <main>
-        <section class="hero">
-            <div class="conteiner">
+        <section id="hero" class="hero">
+            <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title"><span class="hero__title-top">Больше,</span> чем хоккей</h1>
                     <p class="hero__text">
@@ -77,8 +81,9 @@
                     <img class="hero__img" src="img/icon-scroll-mouse-animated.svg" alt="mouse">
                 </div>
             </div> 
+            <div class="header__line"></div>
         </section>
-        <section class="events">
+        <section id="events" class="events">
             <div class="events__text-wrapper">
                 <div class="events__text">
                     <p class="events__run">О МЕРОПРИЯТИИ</p>
@@ -89,95 +94,563 @@
                     <p class="events__run">О МЕРОПРИЯТИИ</p>
                     <p class="events__run">О МЕРОПРИЯТИИ</p>
                     <p class="events__run">О МЕРОПРИЯТИИ</p>
+                    <p class="events__run">О МЕРОПРИЯТИИ</p>
+                    <p class="events__run">О МЕРОПРИЯТИИ</p>
+                    <p class="events__run">О МЕРОПРИЯТИИ</p>
+                    <p class="events__run">О МЕРОПРИЯТИИ</p>
+                    <p class="events__run">О МЕРОПРИЯТИИ</p>
                 </div>
             </div>
-           
-            <div class="conteiner">
-                <div class="slider__events">
-                    <div class="slide__events-arrows">
-                        <div id="arrow__left" class="slide__events-left active">
-                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22.1598 10.9999H0.946621" stroke="black" stroke-width="0.5"/>
-                                <path d="M11.5532 0.393311L22.1598 10.9999L11.5532 21.6065" stroke="black" stroke-width="0.5"/>
-                            </svg> 
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="events__slide">
+                                <img class="events__img" src="img/summit.png" alt="">
+                                <div class="events__block">
+                                    <p class="events__data">17.01.2023</p>
+                                    <h2 class="events__title">I-й Саммит лучших хоккейных команд по версии...</h2>
+                                    <p class="events__paragraph">
+                                        В зале ученого совета Поволжского государственного 
+                                        университета физической культуры, 
+                                        спорта и туризма состоится международный хоккейный 
+                                        форум с участием представителей 
+                                        федераций хоккея стран-участниц турнира, на котором 
+                                        было подписано соглашение о 
+                                        создании чего-то большего.
+                                    </p>
+                                    <button class="btn events__btn">Подробнее 
+                                        <svg class="btn__arrow" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 0.469727L1 15.4697" stroke="black" stroke-width="0.5"/>
+                                            <path d="M1 0.469727H16V15.4697" stroke="black" stroke-width="0.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <button id="arrow__right" class="slide__events-right" >
-                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="swiper-slide">
+                            <div class="events__slide">
+                                <img class="events__img" src="img/summit.png" alt="">
+                                <div class="events__block">
+                                    <p class="events__data">17.01.2023</p>
+                                    <h2 class="events__title">II-й Саммит лучших хоккейных команд по версии...</h2>
+                                    <p class="events__paragraph">
+                                        В зале ученого совета Поволжского государственного 
+                                        университета физической культуры, 
+                                        спорта и туризма состоится международный хоккейный 
+                                        форум с участием представителей 
+                                        федераций хоккея стран-участниц турнира, на котором 
+                                        было подписано соглашение о 
+                                        создании чего-то большего.
+                                    </p>
+                                    <button class="btn events__btn">Подробнее 
+                                        <svg class="btn__arrow" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 0.469727L1 15.4697" stroke="black" stroke-width="0.5"/>
+                                            <path d="M1 0.469727H16V15.4697" stroke="black" stroke-width="0.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="events__slide">
+                                <img class="events__img" src="img/summit.png" alt="">
+                                <div class="events__block">
+                                    <p class="events__data">17.01.2023</p>
+                                    <h2 class="events__title">III-й Саммит лучших хоккейных команд по версии...</h2>
+                                    <p class="events__paragraph">
+                                        В зале ученого совета Поволжского государственного 
+                                        университета физической культуры, 
+                                        спорта и туризма состоится международный хоккейный 
+                                        форум с участием представителей 
+                                        федераций хоккея стран-участниц турнира, на котором 
+                                        было подписано соглашение о 
+                                        создании чего-то большего.
+                                    </p>
+                                    <button class="btn events__btn">Подробнее 
+                                        <svg class="btn__arrow" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 0.469727L1 15.4697" stroke="black" stroke-width="0.5"/>
+                                            <path d="M1 0.469727H16V15.4697" stroke="black" stroke-width="0.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                     <div class="arrows">
+                        <div class="swiper-button-prev">
+                            <svg class="arrows__prev" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.1598 10.9999H0.946621" stroke="black" stroke-width="0.5"/>
                                 <path d="M11.5532 0.393311L22.1598 10.9999L11.5532 21.6065" stroke="black" stroke-width="0.5"/>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="frime__events">
-                        <div id="tabs" class="tabs"></div>
-                        <div class="frime__events-content">
-                            <div class="slide__events-wrapper block">
-                                <div class="slide__events">
-                                    <div class="slide__events-painting">
-                                        <img class="slide__events-img" src="img/summit.png" alt="Картинка">
-                                        
-                                    </div>               
-                                    <div class="slide__events-content">
-                                        <p class="slide__events-data">17.01.2023</p>
-                                        <h2 class="slide__events-title">
-                                            I-й Саммит лучших хоккейных` команд по версии...
-                                        </h2>
-                                        <p class="slide__events-text">
-                                            В зале ученого совета Поволжского государственного университета физической культуры, 
-                                            спорта и туризма состоится международный хоккейный форум с участием представителей 
-                                            федераций хоккея стран-участниц турнира, на котором было подписано соглашение 
-                                            о создании чего-то большего.
-                                        </p>
-                                        <button class="btn slide__events-btn">Подробнее <img class="btn__arrow" src="img/arrow.svg" alt="стрелка"></button>
-                                    </div>
-                                </div>
+                                
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg class="arrows__next"  width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.1598 10.9999H0.946621" stroke="black" stroke-width="0.5"/>
+                                <path d="M11.5532 0.393311L22.1598 10.9999L11.5532 21.6065" stroke="black" stroke-width="0.5"/>
+                            </svg>
+                                
+                        </div>
+                    
+                     </div>
+                   
+                    
+                </div>
+
+            </div>
+            <div class="header__line-events"></div>
+        </section>
+        <section id="tourney" class="tourney">
+            <div class="header__line-tourney"></div>
+            <div class="events__text-wrapper">
+                <div class="events__text events__tourney">
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                    <p class="events__run tourney__run">О ТУРНИРЕ</p>
+                </div>
+            </div>
+            <div class="tourney__container container">
+                <div class="tourney__block">
+                    <h2 class="tourney__title">«EKB Hockey Cup 2023»</h2>
+                    <p class="tourney__text">
+                        <span class="tourney__span">Целью</span> 
+                        Турнира стало укрепление связей России и 
+                        стран Организации Мирового Сотрудничества 
+                        (ОИС) в области спорта, в частности, хоккея.
+                    
+                    </p>
+                    <p class="tourney__text">
+                        Соревнования объединили свыше 350 спортсменов и представителей 
+                        из 14 стран мира. В турнире приняли участие 12 мужских и 5 женских сборных команд.
+                        В матчах на льду «Татнефть Арены» и «Дворца спорта» сыграли мужские команды из ОАЭ, 
+                        Саудовской Аравии, Омана, Бахрейна, Алжира, Ливана, Марокко, Ирана, Казахстана, 
+                        Узбекистана, Туркменистана, Кыргызстана, команда сборной Татарстана, а также 
+                        женские команды из ОАЭ, Бахрейна, Саудовской Аравии, Ирана и Екатеринбурга.
+                    </p>
+                    <h3 class="tourney__sub-title">Организаторы Турнира:</h3>
+                    <ul class="tourney__list">
+                        <li class="tourney__item">ООО «СКП «БобНефть»</li>
+                        <li class="tourney__item">АНО ДПО «Екатеринбургский союз хоккеистов России».</li>
+                    </ul>
+                </div>
+                <div class="tourney__swiper-wrapper">
+                    
+                    <div class="tourney__swiper">
+                        
+                        <div class="swiper-wrapper">
+                       
+                            <div class="swiper-slide"><img src="img/Cup.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/Cup.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/Cup.png" alt=""></div>
+                        
+                        </div>
+                       
+                        <div class="tourney__swiper-pagination swiper-pagination"></div>
+                    
+                        
+                        <div class="tourney__arrows">
+                            <div class="tourney__swiper-button-prev">
+                                <svg class="tourney__arrow-prev" width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.2014 25.9147L3.00002 13.7133L14.7133 2.00006" stroke="white" stroke-width="4"/>
+                                </svg>    
                             </div>
-                            <div class="slide__events-wrapper">
-                                <div class="slide__events">
-                                    <div class="slide__events-painting">
-                                        <img class="slide__events-img" src="img/summit.png" alt="Картинка">
-                                    </div>               
-                                    <div class="slide__events-content">
-                                        <p class="slide__events-data">17.01.2023</p>
-                                        <h2 class="slide__events-title">
-                                            II-й Саммит лучших хоккейных команд по версии...
-                                        </h2>
-                                        <p class="slide__events-text">
-                                            В зале ученого совета Поволжского государственного университета физической культуры, 
-                                            спорта и туризма состоится международный хоккейный форум с участием представителей 
-                                            федераций хоккея стран-участниц турнира, на котором было подписано соглашение 
-                                            о создании чего-то большего.
-                                        </p>
-                                        <button class="btn slide__events-btn">Подробнее <img class="btn__arrow" src="img/arrow.svg" alt="стрелка"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide__events-wrapper">
-                                <div class="slide__events">
-                                    <div class="slide__events-painting">
-                                        <img class="slide__events-img" src="img/summit.png" alt="Картинка">
-                                    </div>               
-                                    <div class="slide__events-content">
-                                        <p class="slide__events-data">17.01.2023</p>
-                                        <h2 class="slide__events-title">
-                                            III-й Саммит лучших хоккейных команд по версии...
-                                        </h2>
-                                        <p class="slide__events-text">
-                                            В зале ученого совета Поволжского государственного университета физической культуры, 
-                                            спорта и туризма состоится международный хоккейный форум с участием представителей 
-                                            федераций хоккея стран-участниц турнира, на котором было подписано соглашение 
-                                            о создании чего-то большего.
-                                        </p>
-                                        <button class="btn slide__events-btn">Подробнее <img class="btn__arrow" src="img/arrow.svg" alt="стрелка"></button>
-                                    </div>
-                                </div>
+                            <div class="tourney__swiper-button-next">
+                                <svg class="tourney__arrow-next" width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.2014 25.9147L3.00002 13.7133L14.7133 2.00006" stroke="white" stroke-width="4"/>
+                                </svg>  
                             </div>
                         </div>
+                     
                     </div>
                 </div>
             </div>
         </section>
+        <section id="countries" class="countries"> 
+            <div class="header__line-countries"></div>
+            <div class="container">
+                <h2 class="countries__hero-title">СТРАНЫ УЧАСТНИКИ</h2>
+                <div class="countries__content">
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country1.png" alt="">
+                        <h3 class="countries__title">ИРАН</h3>
+                        <p class="countries__text">Федерация лыжных и зимних видов спорта</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country2.png" alt="">
+                        <h3 class="countries__title">ЛИВАН</h3>
+                        <p class="countries__text">Федерация хоккея с шайбой</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country3.png" alt="">
+                        <h3 class="countries__title">АЛЖИР</h3>
+                        <p class="countries__text">Ассоциация</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country4.png" alt="">
+                        <h3 class="countries__title">БАХРЕЙН</h3>
+                        <p class="countries__text">Хоккейный клуб</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country5.png" alt="">
+                        <h3 class="countries__title">САУДОВСКАЯ АРАВИЯ</h3>
+                        <p class="countries__text">Клуб зимних игр</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country6.png" alt="">
+                        <h3 class="countries__title">ОАЭ</h3>
+                        <p class="countries__text">Федерация лыжных и зимних видов спорта</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country7.png" alt="">
+                        <h3 class="countries__title">ОМАН</h3>
+                        <p class="countries__text">Комитет конькобежного спорта</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country8.png" alt="">
+                        <h3 class="countries__title">МАРОККО</h3>
+                        <p class="countries__text">Королевская федерация хоккея с шайбой</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country9.png" alt="">
+                        <h3 class="countries__title">ТУРЦИЯ</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country10.png" alt="">
+                        <h3 class="countries__title">МОНГОЛИЯ</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country11.png" alt="">
+                        <h3 class="countries__title">ТУРКМЕНИСТАН</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country12.png" alt="">
+                        <h3 class="countries__title">УЗБЕКИСТАН</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country13.png" alt="">
+                        <h3 class="countries__title">КЫРГЫЗСТАН</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country14.png" alt="">
+                        <h3 class="countries__title">КАЗАХСТАН</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                    <div class="countries__block">
+                        <img class="countries__img" src="img/country15.png" alt="">
+                        <h3 class="countries__title">АЗЕРБАЙДЖАН</h3>
+                        <p class="countries__text">Федерация хоккея</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="target" class="target">
+            <div class="header__line-countries"></div>
+            <div class="target__container container">
+                <div>
+                    <h2 class="target__title">
+                        Цель <br>
+                        развития 
+                    </h2>
+                    <img class="target__img" src="img/arrow.png" alt="">
+                </div>
+
+                <div class="target__texts">
+                    <p class="target__text">
+                        Развитие хоккея в государствах с ведущей религией ислам, развитие 
+                        и популяризация хоккея в регионах Азии, Ближнего Востока и Африки.
+                    </p>
+                    <p class="target__text">                        
+                        Сотрудничество позволит странам перенять опыт российского хоккея, 
+                        подготовить игроков, тренеров и судей и получить доступ к 
+                        методикам подготовки юных хоккеистов.
+                    </p>
+                    
+                </div>
+
+                <div class="target__person">
+                    <div class="target__info">
+                        <img class="target__img-perosn" src="img/person1.png" alt="">
+                        <div class="target__item">
+                            <h3 class="target__name">Мишель Де Терокко</h3>
+                            <p class="target__position">президент Федерации зимних видов спорта</p>
+                        </div>
+                    </div>
+                    <p class="target__say">
+                        Одной из целей содружества является включение хоккея в Игры исламской 
+                        солидарности, что придаст нашему виду спорта еще больший импульс.
+                    </p>
+                    <img class="person__img person__img-first" src="img/bg__person.png" alt="">
+                </div>
+
+                <div class="target__person">
+                    <div class="target__info">
+                        <img class="target__img-perosn"  src="img/person2.png" alt="">
+                        <div  class="target__item">
+                            <h3 class="target__name">Шамиль Дарконов</h3>
+                            <p class="target__position">президент Федерации <br> хоккея</p>
+                        </div>
+                    </div>
+                    <p class="target__say">
+                        Екатеринбург имеет давнюю историю развития хоккея, здесь находится 
+                        ведущий клуб страны, где играют лучшие хоккеисты страны, на базе 
+                        команды созданы лучшие условия для тренировок игроков. Мы поражены 
+                        уровнем инфраструктуры детского и взрослого хоккея, а также очень 
+                        рады, что смогли принять участие в таком турнире.
+                    </p>
+                    <img class="person__img person__img-last" src="img/bg__person.png" alt="">
+                </div>
+            </div>
+            <div class="events__text-wrapper target__text-wrapper">
+                <div class="events__text events__target">
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                    <p class="events__run">Сервис / Бизнес – проекты</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="projects__decor"></div>
+            <div class="projects__container container">
+                <div class="projects__wrapper-slider">
+                    <div class="projects__swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="projects__slide">
+                                <img class="projects__img" src="img/project1.png" alt="">
+                                <h3 class="projects__slide-title">Развитие хоккейной инфраструктуры </h3>
+                                <p class="projects__slide-text">(хоккейные коробки, лед)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="projects__slide">
+                                <img class="projects__img" src="img/project2.png" alt="">
+                                <h3 class="projects__slide-title">Организация всего сопутствующего сервиса </h3>
+                                <p class="projects__slide-text">(проживание, медицина, питание и др.)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="projects__slide">
+                                <img class="projects__img" src="img/project3.png" alt="">
+                                <h3 class="projects__slide-title">Спортивная экипировка, инвентарь и оборудование</h3>
+                                <p class="projects__slide-text">(шлемы, коньки, клюшки, шайбы и др.)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="projects__slide">
+                                <img class="projects__img" src="img/project1.png" alt="">
+                                <h3 class="projects__slide-title">Развитие хоккейной инфраструктуры </h3>
+                                <p class="projects__slide-text">(хоккейные коробки, лед)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="projects__slide">
+                                <img class="projects__img" src="img/project2.png" alt="">
+                                <h3 class="projects__slide-title">Организация всего сопутствующего сервиса </h3>
+                                <p class="projects__slide-text">(проживание, медицина, питание и др.)</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="projects__slide">
+                                <img class="projects__img" src="img/project3.png" alt="">
+                                <h3 class="projects__slide-title">Спортивная экипировка, инвентарь и оборудование</h3>
+                                <p class="projects__slide-text">(шлемы, коньки, клюшки, шайбы и др.)</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div class="projects__arrows">
+                        <div class="projects__swiper-button-next">
+                            <svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M45.4438 37.6978L58.4327 50.6866L45.9634 63.1559" stroke="white" stroke-width="4"/>
+                                <circle opacity="0.54" cx="49.7036" cy="50.4268" r="49.1284" transform="rotate(-180 49.7036 50.4268)" stroke="white"/>
+                            </svg>    
+                        </div>
+                        <div class="projects__swiper-button-prev">
+                            <svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M45.4438 37.6978L58.4327 50.6866L45.9634 63.1559" stroke="white" stroke-width="4"/>
+                                <circle opacity="0.54" cx="49.7036" cy="50.4268" r="49.1284" transform="rotate(-180 49.7036 50.4268)" stroke="white"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="medicine" class="medicine">
+                    <h2 class="medicine__title">Научное- <br> медицинское <br> сопровождение </h2>
+                    <div class="medicine__swiper">
+                        <!-- Additional required wrapper -->
+                         
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="medicine__slide">
+                                <h3 class="medicine__slide-title">Научное сопровождение в спорте</h3>
+                                <p class="medicine__slide-text">Преддрафтовые тесты и планирование тренировочного процесса, сопровождение тренировочного процесса.</p>
+                                <span class="medicine__slide-num">01</span>
+                            </div>  
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="medicine__slide">
+                                <h3 class="medicine__slide-title">Спортивная медицина</h3>
+                                <p class="medicine__slide-text">Профилактика травм, лечение и реабилитация, питание, психология и др.</p>
+                                <span class="medicine__slide-num">02</span>
+                            </div>  
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="medicine__slide">
+                                <h3 class="medicine__slide-title">Медицинское обеспечение спортсменов </h3>
+                                <p class="medicine__slide-text">Оказание первой помощи и сопровождение пострадавшего до больницы</p>
+                                <span class="medicine__slide-num">03</span>
+                            </div>  
+                          </div>
+                        </div>
+                   
+                        <div class="medicine__swiper-nav">
+                            <div class="medicine__swiper-arrows">
+                                <div class="medicine__swiper-button-prev">
+                                   <svg class="medicine__swiper-prev" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.54" cx="50.1284" cy="49.6567" r="49.1284" transform="rotate(-180 50.1284 49.6567)" stroke="white"/>
+                                        <path d="M45.8687 36.9277L58.8575 49.9166L46.3882 62.3859" stroke="white" stroke-width="4"/>
+                                    </svg>
+                             
+                                </div>
+                                <div class="medicine__swiper-button-next">
+                                   <svg class="medicine__swiper-next" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.54" cx="50.1284" cy="49.6567" r="49.1284" transform="rotate(-180 50.1284 49.6567)" stroke="white"/>
+                                        <path d="M45.8687 36.9277L58.8575 49.9166L46.3882 62.3859" stroke="white" stroke-width="4"/>
+                                    </svg>
+                             
+                                </div>
+                            </div>
+                            <div class="wrapper__scrollbar">
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            
+                        </div>
+                
+                      </div>
+                    <div>
+                       
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="contacts__container "> 
+                <div class="contacts__block ">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__content">
+                            <h3 class="contacts__title">Главный офис</h3>
+                            <p class="contacts__text contacts__text-big">
+                                Российская Федерация, <br>
+                                Свердловская область, <br>
+                                г. Екатеринбург
+                            </p>
+                            <h3 class="contacts__title">связаться</h3>
+                            <a class="contacts__text contacts__link" href="">mail@mail.ru</a>
+                            <a class="contacts__text contacts__link" href="">+7 (8552) 22-22-00</a>
+                            <button class="btn partners__btn contacts__btn">
+                                Связаться с нами
+                                <svg class="btn__arrow" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.8156 1.90332L0.919983 25.7989" stroke="white" stroke-width="2"/>
+                                    <path d="M0.919983 1.90332H24.8156V25.7989" stroke="white" stroke-width="2"/>
+                                </svg>                            
+                            </button>
+                        </div>
+                       
+                    </div>
+ 
+                </div>
+                <div class="contacts__partners">
+                    <h3 class="contacts__title">партнеры</h3>
+                    <img class="contacts__img" src="img/map.png" alt="">
+                </div>
+                <div class="contacts__media-all">
+                    <h3 class="contacts__title">Присоединиться</h3>
+                    <svg class="contacts__media" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.55322" y="1.17285" width="66.9285" height="66.9285" stroke="white" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1355 23.7119C17.4158 37.3369 24.3947 45.5338 36.6149 45.5338H37.3156V37.7481C41.8001 38.1867 45.1914 41.3942 46.5648 45.5612H52.8991C51.1614 39.3381 46.5648 35.9113 43.706 34.5954C46.5648 32.978 50.5728 29.0577 51.5538 23.7119H45.78C44.5468 28.0434 40.8471 31.9636 37.3156 32.3475V23.7119H31.5418V38.8447C27.9823 37.9674 23.4698 33.7182 23.2456 23.7119H17.1355Z" fill="white"/>
+                    </svg>
+                    <svg class="contacts__media" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.34668" y="1.17285" width="66.9285" height="66.9285" stroke="white" stroke-width="2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7407 32.8652C29.8787 29.2727 35.304 26.9022 38.0167 25.7594C45.7696 22.495 47.3771 21.9236 48.4264 21.9066C48.6553 21.9009 49.1743 21.9632 49.5092 22.2347C49.7939 22.4667 49.872 22.7779 49.9055 22.9985C49.939 23.2191 49.9893 23.7227 49.9502 24.113C49.5316 28.5881 47.712 39.4392 46.791 44.4518C46.4003 46.5734 45.63 47.2806 44.8821 47.3541C43.2634 47.5069 42.0299 46.2679 40.4615 45.2269C38.0055 43.5975 36.6157 42.5792 34.2324 40.9838C31.4751 39.1451 33.2612 38.1324 34.8352 36.4804C35.2482 36.0504 42.3871 29.465 42.5267 28.8653C42.5434 28.7918 42.5601 28.5146 42.3983 28.3675C42.2364 28.2204 41.9964 28.2713 41.8178 28.3109C41.5722 28.3675 37.6483 30.9982 30.0462 36.1975C28.9298 36.9726 27.9252 37.3516 27.0209 37.329C26.0218 37.3064 24.1073 36.7576 22.684 36.288C20.937 35.7109 19.5472 35.4054 19.6644 34.4267C19.7314 33.9175 20.4235 33.397 21.7407 32.8652Z" fill="white"/>
+                    </svg>                            
+                </div>
+            </div>
+        </section>
+        <section id="partners" class="partners">
+            <div class="header__line"></div>
+            <div class="partners__container container">
+                <h2 class="partners__title">Связаться с нами</h2>
+                <form class="partners__form" action="">
+                    <div class="partners__content">
+                        <label class="partners__label" for="">
+                            <span class="partners__text">Имя*</span>
+                            <input class="partners__input" type="text" name="" id="" placeholder="Ваше имя">
+                        </label>
+                        <label class="partners__label" for="">
+                            <span class="partners__text">Тема</span>
+                            <input class="partners__input" type="text" name="" id="" placeholder="Введите тему">
+                        </label>
+                        <label class="partners__label" for="">
+                            <span class="partners__text">Почта*</span>
+                            <input class="partners__input" type="text" name="" id="" placeholder="Ваш электронный адрес">
+                        </label>
+                    </div>
+                    <label class="partners__label" for="">
+                        <span class="partners__text">Сообщение*</span>
+                        <textarea  class="partners__input" name="" id="" rows="13" placeholder="Введите ваше сообщение"></textarea>
+                    </label>
+                </form>
+                <div class="partners__wrapper-btn">
+                    <button class="btn partners__btn">
+                        ОТПРАВИТЬ
+                        <svg class="btn__arrow" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8502 1.71045L0.931641 20.629" stroke="white" stroke-width="1.58344"/>
+                            <path d="M0.931641 1.71045H19.8502V20.629" stroke="white" stroke-width="1.58344"/>
+                        </svg>    
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
