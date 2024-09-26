@@ -90,8 +90,38 @@ body{
 }
 
 .logo{
+    transition: all 0.3s;
 }
 
+.logo.active path{
+    fill: #003E32;
+}
+
+
+.logo.active__color path{
+    fill: #fff !important; 
+}
+
+.VK__icon.color path,
+.TG__icon.color path{
+    fill: #000;
+}   
+
+.lang__ru.color,
+.lang__eng.color {
+    color: #000;
+}   
+
+.lang__ru.active__color,
+.lang__eng.active__color {
+    color: #fff !important; 
+}   
+
+.burger.color.burger::after,
+.burger.color.burger::before,
+.burger.color .burger__line{
+    background: #000;
+}
 .wrapper__burger{
     position: fixed;
     top: 50%;
@@ -128,15 +158,20 @@ body{
 .burger.active::after{
     top: 0;
     transform: rotate(45deg);
+    background: #fff !important;
+
 }
 
 .burger.active::before{
     top: 0;
     transform: rotate(-45deg);
+    background: #fff !important;
+
 }
 
 .burger.active .burger__line{
     opacity: 0;
+    
 }
 
 .circle{
@@ -198,6 +233,7 @@ body{
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 300;
+    transition: all 0.3s;
 }
 
 .language:first-child{
